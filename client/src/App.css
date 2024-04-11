@@ -1,0 +1,136 @@
+/* Styles for the container of signup and login pages */
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw; /* Ensure it takes up the full viewport width */
+  background-color: #f7f7f7;
+}
+
+/* Styles for the forms on signup and login pages */
+.sign-up-form {
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make form responsive */
+  max-width: 400px; /* Maximum width of the form */
+}
+
+/* Label styles */
+.sign-up-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #080909;
+}
+
+/* Input styles */
+.sign-up-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Button styling within the form */
+.sign-up-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for form buttons */
+.sign-up-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Placeholder styling */
+::placeholder {
+  font-style: italic;
+}
+
+/* Styling for paragraphs, mainly for the 'Already have an account?' part */
+.paragragh {
+  color: #000;
+}
+
+/* Styles for the Home component */
+.home {
+
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Individual button styles in the Home component */
+.home button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Inherits the blue background color */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  float:right;
+}
+
+/* Hover effect for home page buttons */
+.home button:hover {
+  background-color: #0056b3;
+}
+
+/* App.css */
+.modal {
+  position: fixed;
+  z-index: 1000; /* Ensure the modal is on top of other content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px; /* Adjust width as necessary */
+  z-index: 1001; /* Ensure the content is above the modal overlay */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+}
+.modal-button{
+  color: #007bff;
+}
+
+.error-message {
+  color: red;
+  margin: 10px 0;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffdddd;
+}
+
+
+
+
+
