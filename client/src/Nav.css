@@ -1,46 +1,39 @@
-/* Navbar.css */
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #478fbc;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-brand h1 {
-    margin-left: 10px;
-  }
-  
-  .logo {
-    height: 50px; /* Adjust based on your logo */
-  }
-  
-  .navbar-links {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #25a089, #2a3f9e);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-  /* Additional CSS */
+.navbar-brand h1 {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
 .nav-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .nav-link:hover {
-    background-color: #285e2b;
-  }
-  
- 
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #5805d5;
+}
+
+.nav-link button{
+  background-color: none;
+
+}

@@ -1,0 +1,36 @@
+.logout button{
+    background-color:#2d45ac;
+}
+
+.modal-button{
+color: aliceblue;
+padding: 10px;
+padding-right: 10px;
+
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000; /* Ensure the modal is on top of other content */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as necessary */
+    z-index: 1001; /* Ensure the content is above the modal overlay */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+  }
+  .modal-button{
+  }

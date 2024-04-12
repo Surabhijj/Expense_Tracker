@@ -6,12 +6,12 @@
   justify-content: center;
   min-height: 100vh;
   width: 100vw; /* Ensure it takes up the full viewport width */
-  background-color: #f7f7f7;
+  background: linear-gradient(to right, #25a089, #2a3f9e);
 }
 
 /* Styles for the forms on signup and login pages */
 .sign-up-form {
-  padding: 80px;
+  padding: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #ffffff;
@@ -94,32 +94,7 @@
 }
 
 /* App.css */
-.modal {
-  position: fixed;
-  z-index: 1000; /* Ensure the modal is on top of other content */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-}
 
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  width: 300px; /* Adjust width as necessary */
-  z-index: 1001; /* Ensure the content is above the modal overlay */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
-}
-.modal-button{
-  color: #007bff;
-}
 
 .error-message {
   color: red;
@@ -130,7 +105,66 @@
   background-color: #ffdddd;
 }
 
+/* General body styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
 
+/* Home component styling */
+.home {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #25a089, #2a3f9e);
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.about, .features {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature {
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.dashboard{
+  background-color: #c5faf0;
+}
 
 
 

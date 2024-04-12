@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh; /* Make the container take the full viewport height */
   width: 100vw; /* Make the container take the full viewport width */
-  background-color: #478fbc; /* Background color of your choice */
+  background: linear-gradient(to right, #25a089, #2a3f9e);
 }
 
 form {

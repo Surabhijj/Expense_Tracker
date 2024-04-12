@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ExpenseCard from './ExpenseCard';
 import ExpenseChart from './ExpenseChart';
+import '../App.css';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -42,7 +43,7 @@ const Dashboard = () => {
     };
 
     return (
-      <div>
+      <div className='dashboard'>
       <h2>Dashboard</h2>
       <ExpenseChart expenses={expenses} />
       <div>

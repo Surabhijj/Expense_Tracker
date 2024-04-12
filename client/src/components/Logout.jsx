@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../components/AuthContext.jsx'; 
+import '../logout.css'
 
 
 const Logout = () => {
@@ -23,19 +24,19 @@ const Logout = () => {
   };
 
   return (
-    <>
-      <button className="nav-link" onClick={() => setShowModal(true)}>Logout</button>
+    < div className='logout'>
+      <button  className="nav-link" onClick={() => setShowModal(true)} >Logout</button>
       {showModal && (
         <div className="modal">
           <div className="modal-content">
             <h2>Confirm Logout</h2>
             <p>Are you sure you want to log out?</p>
-            <button onClick={handleLogout}>Yes, Log Out</button>
-            <button onClick={() => setShowModal(false)}>Cancel</button>
+            <button className="modal-button" onClick={handleLogout}>Yes, Log Out</button>
+            <button className="modal-button" onClick={() => setShowModal(false)}>Cancel</button>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
